@@ -8,13 +8,13 @@ var checkSize = function(number){
 }
 var checkNumber = function(decNum) {
   var parsedNum = parseFloat(decNum.replace(/,/g, ""));
-  if (parsedNum === NaN) {
+  if (!parsedNum) {
     alert(decNum + " is not a number. Please enter a number.");
   }
   else {
-    checkSize(Math.round(parsedNum));
-    if (checkSize === false) {
-      alert(decNum + " is too big! Try again.")
+    var size = checkSize(Math.round(parsedNum));
+    if (!size) {
+      alert(decNum + " is too big! Try again.");
     }
     else {
       return romanNumeralizer(Math.round(parsedNum));
@@ -127,7 +127,7 @@ $(function() {
     var inputDec = $("#decimal").val();
     var rnAnswer = checkNumber(inputDec);
     console.log(rnAnswer);
-    $("#roman").append(rnAnswer);
+    $("#roman").text(rnAnswer);
     event.preventDefault();
   })
 })
