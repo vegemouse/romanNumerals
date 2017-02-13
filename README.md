@@ -1,3 +1,10 @@
+# Pig Latin
+### by Max Cady and Lina Shadrach
+
+## Description
+
+Converts numbers to roman numerals.
+
 ### return an alert asking for numbers if non-numerical characters are entered as input
 * 'abc'
 * 'abc' is not a number. Please enter a number.
@@ -13,3 +20,19 @@
 ### change only use the subtraction specification with RN that are related by a factor of 10
 * 3999
 * MMMDCDXCIX
+
+## Setup
+
+* Clone this repository.
+* Open the directory in your choice of text editor.
+* Then open index.html via a web browser of your choice.
+
+## Technologies Used
+* JavaScript
+* JQuery
+* html
+* CSS
+* Bootstrap
+
+## Legal
+Copyright (c) 2016 Copyright Holder All Rights Reserved.
