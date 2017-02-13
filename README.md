@@ -1,4 +1,4 @@
-# Pig Latin
+# Roman Numeral Converter
 ### by Max Cady and Lina Shadrach
 
 ## Description
